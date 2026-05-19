@@ -658,6 +658,28 @@ textarea:focus {
   margin-top: 4px;
 }
 
+.submit-button:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
+.form-status {
+  min-height: 20px;
+  margin: -6px 0 0;
+  color: var(--forest);
+  font-size: 13px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.form-status:empty {
+  display: none;
+}
+
+.form-status.is-error {
+  color: var(--danger);
+}
+
 .form-note {
   margin: 0;
   color: var(--muted);
